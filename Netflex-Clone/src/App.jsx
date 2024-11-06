@@ -1,19 +1,26 @@
-import React from 'react'
+// import React from 'react'
 import Home from './pages/Home/Home'
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 import Player from './pages/Player/Player'
-import TitleCards from './components/TitleCards/TitleCards'
-import Login from './pages/Login/Login'
+// import TitleCards from './components/TitleCards/TitleCards'
+// import Login from './pages/Login/Login'
+// import Footer from './components/Footer/Footer';
+//import Footer from './components/Footer/Footer';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Login from './pages/Login/Login';
+
 
 
 const App = () => {
   return (
     <div>
-      <Home />
-      <Navbar />
-      <Player />
-      <Login />
-      <TitleCards />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path='/player/:id' element={<Player />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -10,7 +10,7 @@
 .hero-caption{
     position: absolute;
     width: 100%;
-    padding-left: 6%;
+    padding-left: 2%;
     bottom: 0;
 }
 .caption-img{
@@ -52,5 +52,5 @@
 background: #ffffffbf;
 }
 .more-cards{
-    padding-left: 6%;
+    padding-left: 2%;
 }
